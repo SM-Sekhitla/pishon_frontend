@@ -17,22 +17,16 @@ const testimonials = [
     quote:
       "Pishon understood exactly what we needed and delivered exceptional candidates within weeks. Our new CEO has transformed our organization.",
     author: "Thabo Mokoena",
-    role: "Chairman",
-    company: "Major JSE-Listed Company",
   },
   {
     quote:
       "Their discretion and professionalism throughout the process was outstanding. They found us a CFO who exceeded all expectations.",
     author: "Sarah van der Berg",
-    role: "CEO",
-    company: "Leading Retail Group",
   },
   {
     quote:
       "As a candidate, I was impressed by their thorough understanding of my career aspirations. They matched me with the perfect opportunity.",
     author: "Nomvula Dlamini",
-    role: "COO",
-    company: "Financial Services Firm",
   },
 ];
 
@@ -105,9 +99,6 @@ const Testimonials = () => {
                 <div className="font-heading font-semibold text-foreground text-sm md:text-base">
                   {testimonial.author}
                 </div>
-                <div className="text-xs md:text-sm text-muted-foreground">
-                  {testimonial.role}, {testimonial.company}
-                </div>
               </div>
             </div>
           ))}
@@ -134,20 +125,6 @@ const Testimonials = () => {
                     Full Name *
                   </label>
                   <Input required placeholder="Your name" />
-                </div>
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium mb-2">
-                      Role *
-                    </label>
-                    <Input required placeholder="e.g., CEO" />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">
-                      Company *
-                    </label>
-                    <Input required placeholder="Company name" />
-                  </div>
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-2">

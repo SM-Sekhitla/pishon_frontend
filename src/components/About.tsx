@@ -1,11 +1,13 @@
 import { Award, Users, Target, Shield } from "lucide-react";
+import baobabBg from "@/assets/baobab-tree.png";
 
 const About = () => {
   return (
     <section id="about" className="py-16 md:py-28 bg-secondary text-secondary-foreground relative overflow-hidden">
-      {/* Decorative Elements */}
-      <div className="absolute top-0 right-0 w-64 md:w-96 h-64 md:h-96 bg-forest-light/20 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-64 md:w-96 h-64 md:h-96 bg-gold/10 rounded-full blur-3xl" />
+      <div className="about-landscape" aria-hidden="true">
+        <img src={baobabBg} alt="" loading="lazy" decoding="async" />
+      </div>
+      <div className="about-green-overlay" aria-hidden="true" />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">

@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ArrowUpRight, ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
-import financeBg from "@/assets/industries/finance.jpg";
+import boardroomBg from "@/assets/executive-boardroom.png";
+import baobabBg from "@/assets/baobab-tree.png";
 
 const slides = [
   {
-    image: heroBg,
+    image: boardroomBg,
     eyebrow: "Experience. Diversity. Inclusion.",
     title: "Exceptional leaders.",
     accent: "Lasting impact.",
@@ -16,7 +16,7 @@ const slides = [
     caption: "01 / Executive search",
   },
   {
-    image: financeBg,
+    image: baobabBg,
     eyebrow: "A fresh perspective on leadership",
     title: "Different perspectives.",
     accent: "Stronger futures.",
@@ -53,7 +53,7 @@ const Hero = () => {
 
   return (
     <section
-      className="hero-slider relative isolate overflow-hidden bg-charcoal text-cream"
+      className="hero-slider executive-hero relative isolate overflow-hidden bg-charcoal text-cream"
       aria-roledescription="carousel"
       aria-label="Pishon leadership services"
       onMouseEnter={() => setHovered(true)}
@@ -68,24 +68,23 @@ const Hero = () => {
     >
       {slides.map((slide, index) => (
         <div key={slide.title} className={`hero-backdrop ${active === index ? "is-active" : ""}`} aria-hidden="true">
-          <img src={slide.image} alt="" className={`h-full w-full object-cover object-top ${index === 0 ? "hero-team-image" : ""}`} fetchPriority={index === 0 ? "high" : "auto"} />
+          <img src={slide.image} alt="" className="h-full w-full object-cover object-center" fetchPriority={index === 0 ? "high" : "auto"} />
         </div>
       ))}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-charcoal/95 via-charcoal/75 to-charcoal/40" />
-      <div className="hero-orbit" aria-hidden="true" />
-      <div className="container mx-auto px-5 md:px-8 relative pt-40 pb-36 md:pt-52 md:pb-44">
+      <div className="executive-hero-shade absolute inset-0 -z-10" />
+      <div className="hero-inner container mx-auto px-5 md:px-8 relative">
         <div aria-live={playing ? "off" : "polite"} aria-atomic="true">
           {slides.map((slide, index) => active === index && (
-            <div key={slide.title} className="hero-copy max-w-4xl" role="group" aria-roledescription="slide" aria-label={`${index + 1} of ${slides.length}`}>
+            <div key={slide.title} className="hero-copy max-w-2xl" role="group" aria-roledescription="slide" aria-label={`${index + 1} of ${slides.length}`}>
               <p className="hero-enter flex items-center gap-3 text-xs md:text-sm tracking-[0.22em] uppercase text-gold-light mb-7">
                 <span className="h-px w-10 bg-primary" />{slide.eyebrow}
               </p>
-              <h1 className="hero-enter text-[clamp(2.65rem,6.6vw,6.5rem)] font-heading leading-[1.08] tracking-tight font-medium mb-7">
-                {slide.title}<br /><span className="text-gold-light italic">{slide.accent}</span>
+              <h1 className="hero-enter text-[clamp(2.8rem,4.7vw,4.75rem)] font-heading leading-[1.08] tracking-tight font-medium mb-7">
+                {slide.title}<br /><span className="text-gold-light">{slide.accent}</span>
               </h1>
-              <p className="hero-enter max-w-xl text-base md:text-lg leading-relaxed text-cream/80 mb-9">{slide.description}</p>
+              <p className="hero-enter max-w-lg text-base md:text-lg leading-relaxed text-cream/80 mb-9">{slide.description}</p>
               <div className="hero-enter flex flex-wrap items-center gap-4">
-                <Button asChild size="xl" className="group rounded-full"><a href={slide.href}>{slide.action}<ArrowUpRight className="transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" /></a></Button>
+                <Button asChild size="xl" className="group executive-button"><a href={slide.href}>{slide.action}<ArrowUpRight className="transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" /></a></Button>
                 <a href="#about" className="group inline-flex items-center gap-3 px-3 py-3 text-sm text-cream/90">Meet Pishon <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" /></a>
               </div>
             </div>
@@ -96,7 +95,7 @@ const Hero = () => {
             {slides.map((slide, index) => (
               <button key={slide.caption} aria-label={`Show slide ${index + 1}: ${slide.caption.slice(5)}`} aria-current={active === index ? "true" : undefined} onClick={() => select(index)} className={`hero-tab text-left py-2 ${active === index ? "text-cream" : "text-cream/50"}`}>
                 <span className="text-xs tracking-widest uppercase">{slide.caption}</span>
-                <span className="block mt-3 h-0.5 w-full bg-white/20 overflow-hidden"><span key={`${active}-${playing}-${hovered}`} className={`block h-full bg-primary ${active === index ? playing ? "hero-progress" : "w-full" : "w-0"}`} style={{ animationPlayState: hovered ? "paused" : "running" }} /></span>
+                <span className="block mt-3 h-0.5 w-full bg-white/20 overflow-hidden"><span key={`${active}-${playing}`} className={`block h-full bg-primary ${active === index ? playing ? "hero-progress" : "w-full" : "w-0"}`} style={{ animationPlayState: hovered ? "paused" : "running" }} /></span>
               </button>
             ))}
           </div>

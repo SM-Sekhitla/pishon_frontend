@@ -1,4 +1,4 @@
-import { RefreshCw, UserCheck, Heart, ClipboardList, Briefcase, Award } from "lucide-react";
+import { RefreshCw, UserCheck, Heart, ClipboardList, Briefcase, Award, ArrowUpRight } from "lucide-react";
 
 const services = [
   {
@@ -41,43 +41,27 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-20 md:py-28 bg-background">
+    <section id="services" className="executive-services py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
-          <span className="inline-block text-primary font-medium tracking-widest uppercase text-xs md:text-sm mb-3 md:mb-4">
-            What We Do
-          </span>
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold mb-4 md:mb-6">
-            Our <span className="text-primary">Services</span>
-          </h2>
-          <p className="text-muted-foreground text-base md:text-lg px-2">
-            Comprehensive talent solutions designed to help South African organizations 
-            build exceptional leadership teams.
-          </p>
-        </div>
-
-        {/* Services Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 lg:gap-8">
-          {services.map((service, index) => (
-            <div
-              key={service.title}
-              className="service-card group bg-card rounded-xl p-4 md:p-8 shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-1 border border-border/50"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className="w-10 h-10 md:w-14 md:h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-3 md:mb-6 group-hover:bg-primary transition-colors duration-300">
-                <service.icon className="w-5 h-5 md:w-7 md:h-7 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
+        <div className="expertise-layout">
+          <div className="expertise-intro">
+            <span className="section-eyebrow">What We Do</span>
+            <h2 className="text-4xl md:text-5xl font-heading leading-tight mt-5 mb-6 text-secondary">Our <span className="text-primary">Services</span></h2>
+            <p className="text-muted-foreground leading-relaxed">Comprehensive talent solutions designed to help South African organizations build exceptional leadership teams.</p>
+            <a href="#about" className="expertise-link inline-flex items-center gap-4 mt-8 text-sm text-secondary">About Us <ArrowUpRight size={16} /></a>
+          </div>
+          <div className="expertise-grid">
+            {services.map((service, index) => (
+              <div key={service.title} className="service-card executive-service group" style={{ animationDelay: `${index * 80}ms` }}>
+                <div className="flex items-center justify-between mb-5">
+                  <service.icon className="w-6 h-6 text-secondary" strokeWidth={1.3} />
+                  <span className="service-number">0{index + 1}</span>
+                </div>
+                <h3 className="text-xl font-heading text-secondary mb-3">{service.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
               </div>
-              
-              <h3 className="text-sm md:text-xl font-heading font-semibold mb-2 md:mb-3">
-                {service.title}
-              </h3>
-              
-              <p className="text-muted-foreground text-xs md:text-base line-clamp-3 md:line-clamp-none">
-                {service.description}
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

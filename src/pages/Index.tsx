@@ -4,6 +4,7 @@ import PageMotion from "@/components/PageMotion";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
+import Team from "@/components/Team";
 import About from "@/components/About";
 import TreeSpacer from "@/components/TreeSpacer";
 import Process from "@/components/Process";
@@ -62,7 +63,7 @@ const Index = () => {
         </script>
       </Helmet>
 
-      <div className="min-h-screen">
+      <div className="executive-page min-h-screen">
         <Header />
         <main>
           <Hero />
@@ -76,6 +77,7 @@ const Index = () => {
           <PageMotion>
           <Services />
           <About />
+          <Team />
           <TreeSpacer />
           <Process />
           <WhyChooseUs />

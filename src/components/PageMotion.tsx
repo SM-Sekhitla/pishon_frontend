@@ -5,7 +5,7 @@ export default function PageMotion({ children }: { children: ReactNode }) {
   const root = useRef<HTMLDivElement>(null);
   useEffect(() => {
     if (!root.current || !('IntersectionObserver' in window)) return;
-    const elements = root.current.querySelectorAll('section > .container > div, [data-reveal]');
+    const elements = root.current.querySelectorAll('section > .container > div:not(.team-grid), [data-reveal]');
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {

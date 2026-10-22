@@ -1,12 +1,11 @@
 import { Linkedin, Mail, Phone } from "lucide-react";
-import { Link } from "react-router-dom";
 import logo from "@/assets/pishon-logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-charcoal text-cream">
+    <footer className="executive-footer bg-secondary text-cream">
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
           {/* Brand */}
@@ -22,7 +21,7 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/pishon-executive-search/home/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-cream/10 flex items-center justify-center hover:bg-primary transition-colors"
@@ -94,6 +93,11 @@ const Footer = () => {
                 </a>
               </li>
               <li>
+                <a href="/#team" className="text-cream/70 hover:text-primary transition-colors text-sm">
+                  Our Team
+                </a>
+              </li>
+              <li>
                 <a href="/#process" className="text-cream/70 hover:text-primary transition-colors text-sm">
                   Our Process
                 </a>
@@ -152,14 +156,6 @@ const Footer = () => {
           <p className="text-cream/50 text-sm">
             © {currentYear} Pishon Executive Search. All rights reserved.
           </p>
-          <div className="flex gap-6">
-            <Link to="/terms" className="text-cream/50 hover:text-primary transition-colors text-sm">
-              Privacy Policy
-            </Link>
-            <Link to="/terms" className="text-cream/50 hover:text-primary transition-colors text-sm">
-              Terms of Service
-            </Link>
-          </div>
         </div>
       </div>
     </footer>
