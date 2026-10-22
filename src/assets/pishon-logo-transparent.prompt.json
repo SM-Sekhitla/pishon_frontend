@@ -1,0 +1,5 @@
+{
+  "tool": "Built-in image_gen",
+  "source": "pishon-logo.png",
+  "prompt": "Background-extraction edit of the supplied Pishon Executive Search logo. Remove ONLY the plain white background and make it fully transparent, including all white areas between letters and inside the laurel branches. Preserve the existing logo exactly: same gold serif Pishon lettering, same gold spaced EXECUTIVE SEARCH text, same green leaves and stems, same colors, precise letterforms, proportions and arrangement. Do not redraw, redesign, change text, add elements, add shadows, or add a checkerboard pattern. Keep the same canvas dimensions and logo placement. Output a genuinely transparent PNG with clean antialiased edges."
+}

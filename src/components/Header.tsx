@@ -1,6 +1,6 @@
 import { useState, useEffect, useLayoutEffect, useRef } from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
-import logo from "@/assets/pishon-logo.png";
+import logo from "@/assets/pishon-logo-transparent.png";
 
 const navLinks = [
   { href: "#services", label: "Services" },

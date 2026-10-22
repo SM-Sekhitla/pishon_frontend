@@ -6,7 +6,7 @@ import reitumetsi from "@/assets/team/reitumetsi-selekisho.jpg";
 const members = [
   { name: "Mosima Selekiso", image: mosima, role: "Managing Director" },
   { name: "Kopano Sekhitla", image: kopano },
-  { name: "Reitumetsi Selekisho", image: reitumetsi },
+  { name: "Reitumetse Selekisho", image: reitumetsi },
 ];
 
 const Team = () => (
