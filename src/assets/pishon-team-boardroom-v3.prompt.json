@@ -1,0 +1,8 @@
+{
+  "tool": "Built-in image_gen",
+  "sources": [
+    "pishon-team-boardroom-v2.png",
+    "hero-bg.jpg"
+  ],
+  "prompt": "Targeted single-face identity correction. IMAGE 1 is the edit target: six women seated at a boardroom table, facing the camera. IMAGE 2 is the authoritative original real team photograph. Correct ONLY the FOURTH woman counting from the LEFT in IMAGE 1, the woman wearing the white high-neck button-front blouse with pulled-back hair. Her real identity is the woman standing at the BACK CENTER in IMAGE 2, above and behind the seated woman. Use that exact original face as the reference. Faithfully reproduce her original face shape, forehead, natural brows, eyelids, eye spacing, nose, cheek proportions, lips and subtle closed-mouth expression, original skin tone, age, pulled-back hairstyle and hairline. Do not beautify, slim her face, make her younger, smooth away skin texture or replace her with a generic face. Preserve the original source facial features as closely as possible. Keep her seated body, blouse, position and orientation in IMAGE 1. Preserve ALL five other women including the newly corrected second and third women EXACTLY as in IMAGE 1; do not touch their faces, hair, hands or clothing. Keep camera-facing poses, all boardroom furnishings, table, plants, glassware, lighting, city skyline, framing and dimensions unchanged. Only woman 4's facial likeness may be corrected. No new people, no text, no logos."
+}

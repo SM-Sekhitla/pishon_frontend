@@ -1,0 +1,8 @@
+{
+  "tool": "Built-in image_gen",
+  "sources": [
+    "pishon-team-boardroom.png",
+    "hero-bg.jpg"
+  ],
+  "prompt": "Edit IMAGE 1, the Pishon six-woman boardroom composition. IMAGE 2 is the original real team photograph and is the authoritative reference for each individual woman's recognizable identity. Make this a candid business discussion rather than a camera-facing posed portrait: seat the same six women on chairs around the walnut table facing inward toward one another. The mature braided woman third from the left is speaking, turning slightly toward the colleagues to her right, mouth subtly open mid-sentence and one hand making a modest natural explanatory gesture. The other five turn their heads naturally toward her, make eye contact and listen attentively with relaxed professional expressions. Nobody looks into the camera. Preserve each woman's individual face, age, complexion, original hairstyle, and original black-and-white outfit based on IMAGE 2, using only modest head rotations and three-quarter views that keep faces recognizable. Do not replace the women with generic models, do not beautify or reshape facial features, do not over-smooth skin, no extra people. Retain the green paneled boardroom, warm brass lamp, windows and Johannesburg skyline, table and notebooks, elegant photographic lighting and wide 2:1 framing from IMAGE 1. The scene should feel like a thoughtful executive leadership meeting. All six faces fully visible and unobstructed, plenty of headroom and side margins. Natural anatomy, realistic hands, restrained gestures. Change interaction and gaze only, keep the room and the same real team. No text or logos."
+}

@@ -1,0 +1,9 @@
+{
+  "tool": "Built-in image_gen",
+  "sources": [
+    "pishon-team-boardroom.png",
+    "team/reitumetsi-selekisho.jpg",
+    "team/mosima-selekiso.jpg"
+  ],
+  "prompt": "Targeted identity correction. IMAGE 1 is the EDIT TARGET: the previous wide boardroom team portrait with all six women facing the camera. Keep this camera-facing composition; do not use the discussion scene. IMAGE 2 is the real close-up reference for ONLY the SECOND woman from the LEFT (black pinafore over white blouse). IMAGE 3 is the real close-up reference for ONLY the THIRD woman from the LEFT (mature woman with braided updo). Replace/correct only these two women's facial likenesses using the exact facial anatomy in their individual reference portraits. Woman 2 must have the same eyes, eyelids, nose width and shape, smile, teeth, lips, natural face proportions, complexion and braided hairline as IMAGE 2. Woman 3 must have the same mature facial proportions, forehead, eye shape, brows, nose, cheek fullness, lips, smile and teeth as IMAGE 3; do NOT make her younger, slim her face, change her facial structure or beautify her. Preserve real skin texture and individuality, no generic model faces or excessive smoothness. Do NOT change woman 3's white blouse to the black outfit from the reference: use IMAGE 3 for facial identity only. All six women remain seated at the table looking into the camera. The other four women, their faces and hairstyles, all outfits, seating positions, hands, room, skyline, lighting, table, plants, notebooks, image dimensions and framing must remain unchanged from IMAGE 1. Modify ONLY facial likeness of women 2 and 3 and blend those corrected faces naturally with existing heads and lighting. No new people, no extra objects, no text."
+}
